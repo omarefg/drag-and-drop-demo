@@ -15,7 +15,6 @@ button {
     text-transform: uppercase;
     cursor: pointer;
     outline: none;
-    border-radius: 20px;
     box-shadow:  9px 9px 16px #ffffff, -9px -9px 16px #a3b1c6;
 }
 
