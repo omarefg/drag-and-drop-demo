@@ -1,5 +1,5 @@
 function dragstartHandler(event) {
-    event.dataTransfer.setData('image', event.target.id)
+    event.dataTransfer.setData('image', event.currentTarget.id)
     event.dataTransfer.dropEffect = 'move'
 }
 
@@ -11,7 +11,7 @@ function dragoverHandler(event) {
 function dropHandler(event) {
     event.preventDefault()
     const image = event.dataTransfer.getData('image')
-    event.target.appendChild(document.getElementById(image))
+    event.currentTarget.appendChild(document.getElementById(image))
 }
 
 function addImage () {
